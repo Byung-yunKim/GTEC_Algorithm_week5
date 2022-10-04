@@ -76,6 +76,17 @@ while current.link != None:
         node = Node()
         node.link = current
         node.data = "2.5"
+        pre.link = node
+        break
+    
+    pre = current
+    current = current.link
+
+print(head.data, end = ' ')
+print(head.link.data, end = ' ')
+print(head.link.link.data, end = ' ')
+print(head.link.link.link.data, end = ' ')
+print(head.link.link.link.link.data, end = ' ')
 
 pre = head
 current = head.link
@@ -127,14 +138,4 @@ print(head.link.link.data, end = ' ')
 print(head.link.link.link.data, end = ' ')
 print(head.link.link.link.link.data, end = ' ')
 print(head.link.link.link.link.link.data, end = ' ')
-        pre.link = node
-        break
-    
-    pre = current
-    current = current.link
-
-print(head.data, end = ' ')
-print(head.link.data, end = ' ')
-print(head.link.link.data, end = ' ')
-print(head.link.link.link.data, end = ' ')
-print(head.link.link.link.link.data, end = ' ')
+```
